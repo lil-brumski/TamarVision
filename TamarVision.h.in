@@ -1,0 +1,5 @@
+#pragma once
+
+#define TamarVision_VERSION_MAJOR @TamarVision_VERSION_MAJOR@
+#define TamarVision_VERSION_MINOR @TamarVision_VERSION_MINOR@
+#define TamarVision_VERSION_PATCH @TamarVision_VERSION_PATCH@
