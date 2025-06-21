@@ -46,9 +46,14 @@ C:\TamarVision\build> cmake --build .
 This is how you run executables from the terminal: 
 
 ## *For Windows:*
-```C:/TamarVision/build/elease> ./TamarVision.exe```
+```bash
+C:/TamarVision/build/release> ./TamarVision.exe
+```
+
 ## *For Linux distros like Ubuntu:*
-```C:/TamarVision/build> ./TamarVision```
+```bash
+C:/TamarVision/build> ./TamarVision
+```
 
 This project uses the MIT Licensing. See the LICENSE file for more information.
 
