@@ -24,6 +24,7 @@ std::string Time() {
 int main(int argc, char **arg_char) {
 	std::vector<std::string> argv(arg_char, arg_char + argc);
 	std::string location = "";
+	std::filesystem::path PathInFilesystem;
 
 	std::vector<std::string> TV_options = {
 		"TamarVision --version",
@@ -58,6 +59,7 @@ int main(int argc, char **arg_char) {
 			return 0;
 		}
 		else if (std::filesystem::exists(argv[1])) {
+			PathInFilesystem = argv[1];
 			location = argv[1];
 		}
 		else{ 
@@ -71,7 +73,7 @@ int main(int argc, char **arg_char) {
 		break;
 	}
 
-	std::string windowName = "TamarVision " + Time();
+	std::string windowName = "TamarVision " + Time() + " File: " + PathInFilesystem.filename().string(); //
 
 	cv::Mat image = cv::imread(location);
 

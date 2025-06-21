@@ -20,6 +20,8 @@
       "binaryDir": "${sourceDir}/build/${presetName}",
       "cacheVariables": {
         "CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreadedDebugDLL",
+        "CMAKE_PREFIX_PATH": "C:/Program Files (x86)/OpenCV_Debug",
+        "WITH_DLL_MD": "ON",
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_TOOLCHAIN_FILE": ""
       }
